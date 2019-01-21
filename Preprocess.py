@@ -52,7 +52,7 @@ def load_data():
     #Splitting Data into input and labels
     inputs = data[:,0:7]
     
-    #Scaling the Data (Dividing ny Mean)
+    #Scaling the Data (Dividing by Mean)
     inputs[:,0] = inputs[:,0]/np.mean(inputs[:,0]) 
     inputs[:,1] = inputs[:,1]/np.mean(inputs[:,1])
     inputs[:,2] = inputs[:,2]/np.mean(inputs[:,2])
